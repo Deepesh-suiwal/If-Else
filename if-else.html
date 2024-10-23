@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else</title>
+</head>
+<body>
+    <script>
+
+
+
+        let a = Number(prompt("Enter your age:"));
+        if(a>=18){
+            console.log("Yes, you are eligible to vote")
+        }
+        else{
+            console.log("Yes, you are eligible to vote")
+        }
+
+
+
+            let n=Number(prompt("Enter a number:"));
+            if(n%2==0){
+                document.write("The given number is even")
+            }
+            else{
+                document.write("The given number is odd")
+            }
+
+
+                    
+
+
+        let char = prompt("Enter a character:");
+        
+        if(char === 'a'|| char ==='e' || char ==='i' || char ==='o' || char ==='u' || char ==='A' || char ==='E' || char ==='I' || char ==='O' || char ==='U' )
+        {
+            document.write("Vowel")
+        }
+        else{
+            document.write("Consonants")
+        }
+
+
+
+        let Day =Number(prompt("Enter a day number"));
+        switch(Day){
+            case 1:
+                console.log("monday")
+                break;
+             case 2:
+                console.log("Tuesday")
+                break; 
+            case 3:
+                console.log("Wednesday")
+                break; 
+            case 4:
+                console.log("Thursday")
+                break; 
+            case 5:
+                console.log("Friday")
+                break;
+            case 6:
+                console.log("Saturday")
+                break;
+            case 7:
+                console.log("Sunday")
+                break;
+            default:
+                console.log("Enter a valid day number")
+        }
+
+
+
+        let  marks=Number(prompt("enter your marks:"));
+        if(marks>=90 && marks<=100){
+            console.log("First Devision")
+        }
+        else if(marks>=70 && marks<=89){
+            console.log("Second Devision")
+        }
+        else if(marks>=60 && marks<=69){
+            console.log("Third Devision")
+        }
+        else if(marks>=34 && marks<=59){
+            console.log("fourth Devision")
+        }
+        else if(marks<34){
+            console.log("fail")
+        }
+        else{
+            console.log("Enter a Valid marks:")
+        }
+
+
+
+
+
+        let num=Number(prompt("Enter a number:"));
+        if(num%5==0 && num%11==0){
+            document.write("yes the number is divisible by 5 and 11")
+        }
+        else{
+            document.write("No the number is divisible by 5 and 11")
+        }
+
+
+
+
+        let num1=Number(prompt("Enter 1st side of a triangle"));
+        let num2=Number(prompt("Enter 3st side of a triangle"));
+        let num3=Number(prompt("Enter 3st side of a triangle"));
+
+        if(num1==num2 && num2==num3 && num3==num1){
+            document.write("According to sides it is a equilateral triangle")
+        }
+        else if(num1!=num2 && num2!=num3 && num3!=num1){
+            document.write("According to sides it is a scalene triangle")
+        }
+        else{
+            document.write("According to sides it is a isosceles triangle")
+        }
+
+
+
+
+
+        let Cost_Price=Number(prompt("Enter your  Cost_Price"));
+        let Selling_Price=Number(prompt("Enter your  Selling_Price"));
+
+        if(Cost_Price<Selling_Price){
+            document.write("Profit<br/>");
+            document.write("Profit of amount:",Cost_Price-Selling_Price);
+        }
+        else if(Cost_Price>Selling_Price){
+            document.write("Loss<br/>");
+            document.write("Loss of amount:",Cost_Price-Selling_Price);
+        }
+        else if(Cost_Price==Selling_Price){
+            document.write("Neutral<br/>");
+            document.write("There is no profit and no loss ");
+        }
+        else{
+            document.write("Please Enter a valid Price")
+        }
+
+
+
+        for (let i=1;i<=100;i++){
+        if(i%3==0){
+            document.write("Fizz");
+        }
+        else if(i%5==0){
+            document.write("Buzz");
+        }
+        else if (i%3==0 && i%5==0){
+            document.write("FizzBuzz");
+        }
+        else{
+            document.write(i);
+        }
+    document.write("<br/>");
+    }
+
+
+
+
+    </script>
+</body>
+</html>
